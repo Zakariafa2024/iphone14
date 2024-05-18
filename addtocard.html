@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple</title>
+<link rel="icon" href="icons-images-videos/apple-logo-transparent.png" type="apple-logo-transparent.png">
+<style>
+    body {
+        background-color:rgba(0, 0, 0, 0.658)
+    }
+    .add-to-card {
+        background-color:rgb(211, 211, 10);
+        border-color:rgb(216, 216, 31);
+        width:115px;
+        height:32px;
+        border-radius:10px;
+        margin-left:20px; 
+        transition:background-color 0.3s; 
+        position:absolute;
+        top:300px;
+        left:1px;
+    }
+    .add-to-card:hover {
+        background-color:rgba(184, 184, 18, 0.938);
+
+    }
+    .dashboard-link {
+        color:aliceblue;
+    }
+    .buy-now {
+        background-color:rgb(237, 161, 18);
+        border-color:rgb(240, 168, 34);
+        width:115px;
+        height:32px;
+        border-radius:10px;
+        margin-left:20px;
+        transition:background-color 0.3s; 
+        position:absolute;
+        top:300px;
+        left:128px; }
+
+    .buy-now:hover {
+        background-color:rgb(183, 126, 20);
+    }
+    .iphone-pic {
+        width:300px;
+        position:absolute;
+        top: 30px;
+        left:200px;
+    }
+    .in-stock {
+        color:#00FF41;
+        font-size:20px;
+    }
+    .iphone-14 {
+        font-size:35px;
+    }
+
+</style>
+
+
+</head>
+<body>
+    <a class="dashboard-link" href="https://youtu.be/dQw4w9WgXcQ?si=RweLPOgry1EJkmio" title="back to dashboard">Dashboard</a>
+    <audio id="clickSound" src="/buttons/icons-images-videos/never-gonna-say-goodbye.mp3"></audio>
+    <button class="add-to-card"  onclick="playClickSound()">Add to cart</button>
+    <button class="buy-now" onclick="playClickSound()">Buy now</button>
+    
+    <script>
+        function playClickSound() {
+            var clickSound = document.getElementById('clickSound');
+            clickSound.play();
+        }
+    </script>
+
+    <img class="iphone-pic"  src="icons-images-videos/visualhunter-e1f15b5446d7f7f7dd4bcb5fadd7e30e.png">
+    <pre class="iphone-14">Iphone 14</pre>
+    <pre class="in-stock">1500£ - in stock</pre>
+    <pre style="font-size:20px;">- light blue color</pre>
+    <pre style="font-size:20px;">- 256gb memory</pre>
+    <pre style="color:aqua; position:absolute; top:250px; left:20px;">Free delivery tomorrow</pre>
+</body>
